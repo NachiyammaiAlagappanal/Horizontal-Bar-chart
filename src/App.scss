@@ -5,3 +5,28 @@
 		font-weight: bold;
 	}
 }
+.bar {
+	background: blue;
+	color: white;
+	text-align: right;
+	animation: 10s rotate linear infinite;
+	border: 2px solid black;
+}
+.label{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.layout{
+	border: 3px solid black;
+	padding: 10px;
+	width: 100vmin;
+	display: grid;
+	row-gap: 10px;
+}
+.row {
+	display: grid;
+	text-align: right;
+	grid-template: 40px / 20% 1fr;
+}
+
