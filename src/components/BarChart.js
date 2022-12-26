@@ -14,16 +14,16 @@ const Row = (
 	const max = Math.max(...states
 		.map((st) => Number(st.estimate2022)));
 
-	return <tr className="row">
-		<td key={ index } className="label">{state}</td>
-		<td
+	return <div className="row">
+		<div key={ index } className="label">{state}</div>
+		<div
 			className="bar"
 			style={ { maxWidth: `${ getBarWidth(population, max) }%` } }
-		>{population}</td>
-	</tr>;
+		>{population}</div>
+	</div>;
 };
 
 const BarChart = ({ data: rows }) =>
-	<table className="layout">{rows.map(Row)}</table>;
+	<div className="layout">{rows.map(Row)}</div>;
 
 export default BarChart;

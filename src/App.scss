@@ -18,14 +18,17 @@
 }
 .layout{
 	border: 3px solid black;
-	padding: 10px;
-	width: 100%;
+	padding: 5px;
+	width: 95%;
 	display: grid;
 	row-gap: 10px;
+	margin: auto;
+	margin-top: 20px;
 }
 .row {
 	display: grid;
 	text-align: right;
-	grid-template: 40px / 5% 1fr;
+	grid-template: 30px /
+  minmax(auto, 130px)
+  1fr;
 }
-
