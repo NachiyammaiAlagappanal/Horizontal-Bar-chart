@@ -9,7 +9,6 @@
 	background: blue;
 	color: white;
 	text-align: right;
-	animation: 10s rotate linear infinite;
 	border: 2px solid black;
 }
 .label{
@@ -20,13 +19,13 @@
 .layout{
 	border: 3px solid black;
 	padding: 10px;
-	width: 100vmin;
+	width: 100%;
 	display: grid;
 	row-gap: 10px;
 }
 .row {
 	display: grid;
 	text-align: right;
-	grid-template: 40px / 20% 1fr;
+	grid-template: 40px / 5% 1fr;
 }
 
